@@ -1,0 +1,103 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-11T21:49:40.280Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1560420,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Login as a driver",
+        "description": "",
+        "id": "login-with-parameters;login-as-a-driver;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 231909680,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6302462503,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "login as a driver",
+            "match": {
+              "location": "LoginStepDefs.loginAsADriver()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4240613300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"user11\" and \"UserUser123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user11\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginStepDefs.userLogsInUsingAnd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10243650,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the title should contains \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefs.theTitleShouldContains(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Login with parameters",
+    "description": "",
+    "id": "login-with-parameters",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginWithParameters.feature",
+    "tags": []
+  }
+]
