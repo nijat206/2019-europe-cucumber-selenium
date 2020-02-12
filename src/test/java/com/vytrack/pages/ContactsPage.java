@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ContactsPage extends BasePage {
+    @FindBy(css=".input-widget")
+    public WebElement pageNumber;
 
 
     public WebElement getContactEmail(String email){

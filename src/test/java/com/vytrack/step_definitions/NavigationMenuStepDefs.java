@@ -1,52 +1,54 @@
 package com.vytrack.step_definitions;
 
 
+import com.vytrack.pages.ContactInfoPage;
+import com.vytrack.pages.ContactsPage;
+import com.vytrack.pages.DashboardPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class NavigationMenuStepDefs {
-    @Given("the user enters the sales manager credentials")
-    public void the_user_enters_the_sales_manager_credentials() {
 
-        System.out.println("I am logged in as a sales manager");
+    @Given("The sales manager should be main page")
+    public void the_sales_manager_should_be_main_page() {
+        System.out.println("The sales manager should be main page");
     }
 
-    @When("the user navigates to the Fleet-Vehicles page")
-    public void the_user_navigates_to_the_Fleet_Vehicles_page() {
-        System.out.println("I navigated to Fleet --> Vehicles page");
+    @When("the sales manager should be able to navigate Fleet --> Vehicles modules")
+    public void the_sales_manager_should_be_able_to_navigate_Fleet_Vehicles_modules() {
+        System.out.println("the sales manager should be able to navigate Fleet --> Vehicles modules");
     }
 
-    @Then("the user should see the page URL: https:\\/\\/qa{int}.vytrack.com\\/entity\\/fleet")
-    public void the_user_should_see_the_page_URL_https_qa_vytrack_com_entity_fleet(Integer int1) {
-
-        System.out.println("I verified that I saw the URL: https://qa3.vytrack.com/entity/fleet");
+    @Then("the sales manager should see correct page url")
+    public void the_sales_manager_should_see_correct_page_url() {
+        System.out.println("the sales manager should see correct page url");
     }
 
-    @When("the user navigates to the Marketing-Campaigns page")
-    public void the_user_navigates_to_the_Marketing_Campaigns_page() {
-
-        System.out.println("I navigated to Marketing --> Campaigns page");
+    @When("the sales manager should be able to navigate Marketing --> Campaigns modules")
+    public void the_sales_manager_should_be_able_to_navigate_Marketing_Campaigns_modules() {
+        System.out.println("the sales manager should be able to navigate Marketing --> Campaigns modules");
     }
 
-    @Then("the user should see the page URL: https:\\/\\/qa{int}.vytrack.com\\/campaign")
-    public void the_user_should_see_the_page_URL_https_qa_vytrack_com_campaign(Integer int1) {
-
-        System.out.println("I verified that I saw the URL: https://qa3.vytrack.com/campaign/");
-    }
-
-    @When("the user navigates to the Activities-Calendar Events page")
-    public void the_user_navigates_to_the_Activities_Calendar_Events_page() {
-
-        System.out.println("I navigated to Activities --> Calendar Events page");
-    }
-
-    @Then("the user should see the URL: https:\\/\\/qa{int}.vytrack.com\\/calendar\\/event")
-    public void the_user_should_see_the_URL_https_qa_vytrack_com_calendar_event(Integer int1) {
-        System.out.println("I verified that I saw the URL: https://qa3.vytrack.com/calendar/event");
-
+    @When("the sales manager should be able to navigate Activities --> Calendar Events modules")
+    public void the_sales_manager_should_be_able_to_navigate_Activities_Calendar_Events_modules() {
+        System.out.println("the sales manager should be able to navigate Activities --> Calendar Events modules");
     }
 
 
+    @When("the user navigates {string} {string}")
+    public void the_user_navigates(String tab, String module) {
+        new DashboardPage().navigateToModule(tab, module);
 
+    }
+
+    @Then("default page number should be {int}")
+    public void default_page_number_should_be(Integer ePageNumber) {
+        ContactsPage contactsPage = new ContactsPage();
+
+        Integer actualNumber = Integer.parseInt(contactsPage.pageNumber.getAttribute("value"));
+
+        Assert.assertEquals(actualNumber, ePageNumber);
+    }
 }

@@ -18,8 +18,10 @@ import org.junit.runner.RunWith;
        // tags = "@driver,@storeManager" old
        // tags = "@Navigate "
         // tags = {"@login","~@smoke"}  old
-        tags = "@wip"
-        //tags = "@login"
+        //tags = "@wip"
+        tags = "@login"
+        //tags = "@logged"
+
 
 
 

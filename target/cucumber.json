@@ -1,13 +1,34 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-02-11T21:49:40.280Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1310742501,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-12T16:08:50.106Z",
         "before": [
           {
             "result": {
-              "duration": 1560420,
+              "duration": 4056581818,
               "status": "passed"
             },
             "match": {
@@ -15,89 +36,236 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Login as a driver",
+        "line": 7,
+        "name": "login as a driver",
         "description": "",
-        "id": "login-with-parameters;login-as-a-driver;;2",
+        "id": "user-should-be-able-to-login;login-as-a-driver",
         "after": [
           {
             "result": {
-              "duration": 231909680,
+              "duration": 267724281,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6302462503,
+              "duration": 4428940859,
               "status": "passed"
             },
-            "line": 5,
-            "name": "login as a driver",
+            "line": 9,
+            "name": "the users enter the driver information",
             "match": {
-              "location": "LoginStepDefs.loginAsADriver()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4240613300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user logs in using \"user11\" and \"UserUser123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user11\"",
-                  "offset": 19
-                },
-                {
-                  "val": "\"UserUser123\"",
-                  "offset": 32
-                }
-              ],
-              "location": "LoginStepDefs.userLogsInUsingAnd(String,String)"
+              "location": "LoginStepDefs.the_users_enter_the_driver_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 10243650,
+              "duration": 2023801405,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the title should contains \"Dashboard\"",
+            "line": 10,
+            "name": "the user should be able to login",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard\"",
-                  "offset": 26
-                }
-              ],
-              "location": "LoginStepDefs.theTitleShouldContains(String)"
+              "location": "LoginStepDefs.the_user_should_be_able_to_login()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1318843853,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-12T16:09:02.305Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2174851114,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login as a sales manger",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-as-a-sales-manger",
+        "after": [
+          {
+            "result": {
+              "duration": 280605681,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4116659896,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the users enter the sales manger information",
+            "match": {
+              "location": "LoginStepDefs.the_users_enter_the_sales_manger_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2014292712,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1348245855,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-12T16:09:12.217Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1966343259,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Login as a store manager",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-as-a-store-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 312911667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3983081942,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the users enter the store manger information",
+            "match": {
+              "location": "LoginStepDefs.the_users_enter_the_store_manger_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2014747362,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
           }
         ]
       }
     ],
-    "name": "Login with parameters",
+    "name": "User should be able to login",
     "description": "",
-    "id": "login-with-parameters",
+    "id": "user-should-be-able-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/LoginWithParameters.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

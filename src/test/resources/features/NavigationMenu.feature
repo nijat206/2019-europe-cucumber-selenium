@@ -1,19 +1,18 @@
-@Navigate
-  Feature:  Users should be able to navigate through the menus
+@All
+Feature: Navigation Menu
 
-    Scenario: go to Menu option and click Fleet and click the Vehicles
-
-    Scenario: navigate to Fleet --> Vehicles
-      Given the user enters the sales manager credentials
-      When the user navigates to the Fleet-Vehicles page
-      Then the user should see the page URL: https://qa3.vytrack.com/entity/fleet
-
-    Scenario: navigate to Marketing --> Campaigns
-      Given the user enters the sales manager credentials
-      When the user navigates to the Marketing-Campaigns page
-      Then the user should see the page URL: https://qa3.vytrack.com/campaign
-
-    Scenario: navigate to Activities --> Calendar Events
-      Given the user enters the sales manager credentials
-      When the user navigates to the Activities-Calendar Events page
-      Then the user should see the URL: https://qa3.vytrack.com/calendar/event
+  @Fleet
+  Scenario: Navigate the top menu
+    Given The sales manager should be main page
+    When the sales manager should be able to navigate Fleet --> Vehicles modules
+    Then the sales manager should see correct page url
+  @Marketing
+  Scenario: Navigate the top menu
+    Given The sales manager should be main page
+    When the sales manager should be able to navigate Marketing --> Campaigns modules
+    Then the sales manager should see correct page url
+  @Calendar
+  Scenario: Navigate the top menu
+    Given The sales manager should be main page
+    When the sales manager should be able to navigate Activities --> Calendar Events modules
+    Then the sales manager should see correct page url
